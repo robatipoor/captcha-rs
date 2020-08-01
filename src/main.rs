@@ -1,5 +1,8 @@
+
 #[macro_use]
 extern crate actix_web;
+#[macro_use]
+extern crate lazy_static;
 
 use actix_web::{http, middleware, web, App, Error, HttpResponse, HttpServer};
 use sqlx::prelude::*;
@@ -11,6 +14,7 @@ use actix_web::dev::ServiceRequest;
 
 mod handlers;
 mod models;
+mod config;
 mod auth;
 use handlers::ping;
 
