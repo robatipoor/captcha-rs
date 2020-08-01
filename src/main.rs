@@ -15,6 +15,7 @@ use actix_web::dev::ServiceRequest;
 mod handlers;
 mod models;
 mod config;
+mod captcha;
 mod auth;
 use handlers::ping;
 
